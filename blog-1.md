@@ -1,18 +1,15 @@
 <div align="center">
 
-# 🔒 Why `any` is a Type Safety Hole and Why `unknown` is the Safer Choice in TypeScript
+#  Why `any` is a Type Safety Hole and Why `unknown` is the Safer Choice in TypeScript
 
 ### Understanding Type Narrowing for Safer and Smarter Code
 
-<p>
-A beginner-friendly guide to understanding one of the most important concepts in TypeScript.
-</p>
 
 </div>
 
 ---
 
-# 📚 Introduction
+# Introduction
 
 One of the biggest reasons developers use TypeScript is because of its powerful type safety system.
 
@@ -179,64 +176,6 @@ This process is called **type narrowing**.
 
 ---
 
-# 📦 Another Example
-
-```ts
-function printLength(data: unknown) {
-  if (Array.isArray(data)) {
-    console.log(data.length);
-  }
-}
-```
-
-Here:
-
-```ts
-Array.isArray(data)
-```
-
-narrows `data` into an array type.
-
-Only then can we safely access:
-
-```ts
-data.length
-```
-
----
-
-# 🌍 Real-World Example
-
-Imagine receiving data from an external API:
-
-```ts
-const response: unknown = await fetchData();
-```
-
-API responses can be unpredictable.
-
-Using `unknown` forces developers to validate the data before using it.
-
-This helps prevent:
-
-- Application crashes
-- Undefined errors
-- Unexpected bugs
-- Security issues
-
----
-
-# ⚖️ `any` vs `unknown`
-
-| Feature | `any` | `unknown` |
-|---|---|---|
-| Accepts any value | ✅ | ✅ |
-| Type safety | ❌ | ✅ |
-| Requires validation before usage | ❌ | ✅ |
-| Prevents unsafe operations | ❌ | ✅ |
-| Recommended for unpredictable data | ❌ | ✅ |
-
----
 
 # 🚀 Best Practice
 
@@ -261,15 +200,3 @@ In modern TypeScript development:
 ✅ Use type narrowing to safely work with values
 
 These practices help developers build scalable, reliable, and professional applications.
-
----
-
-<div align="center">
-
-## ⭐ Thanks for Reading!
-
-<p>
-If you found this blog helpful, consider giving the repository a ⭐.
-</p>
-
-</div>
