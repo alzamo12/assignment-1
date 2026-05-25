@@ -100,23 +100,6 @@ without rewriting logic multiple times.
 
 ---
 
-# 📦 Generics with Interfaces
-
-Generics can also be used with interfaces.
-
-## Example
-
-```ts
-interface ApiResponse<T> {
-  success: boolean;
-  data: T;
-}
-```
-
-Now we can reuse the same interface for different data structures.
-
----
-
 
 # 🏁 Conclusion
 
