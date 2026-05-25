@@ -117,35 +117,6 @@ Now we can reuse the same interface for different data structures.
 
 ---
 
-# 🔍 Example Usage
-
-```ts
-const userResponse: ApiResponse<{ name: string; age: number }> = {
-  success: true,
-  data: {
-    name: "Alice",
-    age: 22,
-  },
-};
-```
-
-This keeps the response structure reusable while preserving strict typing.
-
----
-
-# 🌍 Real-World Use Case
-
-Generics are heavily used in:
-
-- React components
-- API handling
-- Custom hooks
-- Database utilities
-- Reusable libraries
-
-For example, many React hooks internally use Generics to stay flexible and type-safe.
-
----
 
 # 🏁 Conclusion
 
@@ -160,12 +131,3 @@ Instead of writing duplicate logic for different data types, Generics help us wr
 ✅ Flexible components  
 ✅ Safer applications
 
-Mastering Generics is an important step toward becoming a better TypeScript developer.
-
----
-
-<div align="center">
-
-## ⭐ Thanks for Reading!
-
-</div>
